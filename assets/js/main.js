@@ -219,7 +219,7 @@
   /**
    * Preloader
    */
-  let preloader = document.getElementById('preloader');
+let preloader = document.getElementById('preloader');
 if (preloader) {
   window.addEventListener('load', () => {
     preloader.style.display = 'none';  // Hide the preloader
