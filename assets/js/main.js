@@ -219,11 +219,11 @@
   /**
    * Preloader
    */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
+  let preloader = document.getElementById('preloader');
+if (preloader) {
+  window.addEventListener('load', () => {
+    preloader.style.display = 'none';  // Hide the preloader
+  });
+}
 
 })()
