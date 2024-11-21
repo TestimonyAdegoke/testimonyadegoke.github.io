@@ -344,8 +344,14 @@ a:hover {
   z-index: 9999;
   overflow: hidden;
   background: #fff;
+  opacity: 1;
+  transition: opacity 0.5s ease-out; /* Smooth fade-out */
 }
 
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden; /* Hide the preloader after fade-out */
+}
 #preloader:before {
   content: "";
   position: fixed;
